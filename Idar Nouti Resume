@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Idar Nouti – CV</title>
+<style>
+  body{font-family:Segoe UI,Arial,sans-serif;max-width:820px;margin:0 auto;padding:40px 24px;color:#222;line-height:1.6}
+  h1{margin:0;font-size:2.4em}
+  .title{color:#0a7c86;font-size:1.2em;margin:4px 0 12px}
+  .contact a{color:#0a7c86;text-decoration:none;margin-right:16px}
+  h2{border-bottom:2px solid #0a7c86;padding-bottom:4px;margin-top:36px;color:#0a7c86}
+  .job h3{margin:16px 0 0}
+  .meta{color:#666;font-size:.95em}
+  ul{margin-top:6px}
+</style>
+</head>
+<body>
+
+<h1>Idar Nouti</h1>
+<div class="title">YOUR JOB TITLE (e.g. Supply Chain Professional)</div>
+<div class="contact">
+  <a href="mailto:YOUR EMAIL">YOUR EMAIL</a>
+  <a href="https://www.linkedin.com/in/YOUR-LINKEDIN">LinkedIn</a>
+  <span>YOUR CITY, Canada</span>
+</div>
+
+<h2>Summary</h2>
+<p>WRITE 2–3 SENTENCES ABOUT YOUR EXPERIENCE AND WHAT YOU'RE LOOKING FOR.</p>
+
+<h2>Experience</h2>
+<div class="job">
+  <h3>JOB TITLE – COMPANY</h3>
+  <div class="meta">START YEAR – END YEAR · CITY</div>
+  <ul>
+    <li>ACHIEVEMENT OR RESPONSIBILITY</li>
+    <li>ACHIEVEMENT OR RESPONSIBILITY</li>
+  </ul>
+</div>
+<div class="job">
+  <h3>JOB TITLE – COMPANY</h3>
+  <div class="meta">START YEAR – END YEAR · CITY</div>
+  <ul>
+    <li>ACHIEVEMENT OR RESPONSIBILITY</li>
+  </ul>
+</div>
+
+<h2>Education</h2>
+<p><strong>DEGREE</strong> – SCHOOL, YEAR</p>
+
+<h2>Skills</h2>
+<p>SKILL · SKILL · SKILL · SKILL</p>
+
+</body>
+</html>
