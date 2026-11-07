@@ -3,53 +3,274 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Idar Nouti – CV</title>
+<title>Idar Nouti – Supply Chain & Procurement Professional | Calgary</title>
+<meta name="description" content="Idar Nouti – Supply chain and procurement professional with 20+ years in procurement strategy, sourcing, contract management and logistics. Calgary, AB.">
+<meta property="og:title" content="Idar Nouti – Supply Chain & Procurement">
+<meta property="og:description" content="20+ years leading procurement strategy, sourcing, contract management and logistics in Canada and the Middle East.">
+<meta property="og:image" content="photo.jpg">
 <style>
-  body{font-family:Segoe UI,Arial,sans-serif;max-width:820px;margin:0 auto;padding:40px 24px;color:#222;line-height:1.6}
-  h1{margin:0;font-size:2.4em}
-  .title{color:#0a7c86;font-size:1.2em;margin:4px 0 12px}
-  .contact a{color:#0a7c86;text-decoration:none;margin-right:16px}
-  h2{border-bottom:2px solid #0a7c86;padding-bottom:4px;margin-top:36px;color:#0a7c86}
-  .job h3{margin:16px 0 0}
-  .meta{color:#666;font-size:.95em}
-  ul{margin-top:6px}
+  :root{--brand:#0b6e79;--brand-dark:#084e56;--accent:#1fa3a0;--ink:#1d2329;--muted:#5b6670;--line:#e3e8ec;--bg:#f5f7f9;}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+  a{color:var(--brand);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:980px;margin:0 auto;padding:0 24px}
+
+  header{background:linear-gradient(135deg,var(--brand-dark),var(--brand) 60%,var(--accent));color:#fff;padding:56px 0 48px}
+  .hero{display:flex;gap:36px;align-items:center}
+  .hero img{width:170px;height:170px;border-radius:50%;object-fit:cover;border:5px solid rgba(255,255,255,.85);box-shadow:0 8px 24px rgba(0,0,0,.25);flex-shrink:0}
+  .hero h1{margin:0;font-size:2.6rem;letter-spacing:.5px}
+  .tagline{font-size:1.15rem;opacity:.95;margin:4px 0 14px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+  .chips span{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);padding:3px 12px;border-radius:999px;font-size:.88rem}
+  .contact{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:.95rem}
+  .contact a,.contact span{color:#fff}
+  .btns{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:9px 18px;border-radius:6px;font-weight:600;font-size:.95rem}
+  .btn-primary{background:#fff;color:var(--brand-dark)}
+  .btn-ghost{border:1.5px solid #fff;color:#fff}
+  .btn:hover{text-decoration:none;opacity:.9}
+
+  main{padding:8px 0 48px}
+  section{background:#fff;border-radius:12px;padding:28px 32px;margin-top:24px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+  h2{margin:0 0 18px;font-size:1.35rem;color:var(--brand-dark);display:flex;align-items:center;gap:10px}
+  h2::before{content:"";width:6px;height:22px;background:var(--accent);border-radius:3px}
+
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}
+  .stat{background:var(--bg);border-radius:10px;padding:14px;text-align:center}
+  .stat b{display:block;font-size:1.6rem;color:var(--brand)}
+  .stat small{color:var(--muted)}
+
+  .ach{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .card{border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:14px 16px}
+  .card h3{margin:0 0 4px;font-size:1rem}
+  .card p{margin:0;color:var(--muted);font-size:.95rem}
+
+  .skills{display:grid;grid-template-columns:1fr 1fr;gap:18px 28px}
+  .skills h3{margin:0 0 8px;font-size:.98rem}
+  .tags{display:flex;flex-wrap:wrap;gap:6px}
+  .tags span{background:#e8f4f5;color:var(--brand-dark);padding:3px 10px;border-radius:5px;font-size:.85rem}
+
+  .job{position:relative;padding:0 0 22px 26px;border-left:2px solid var(--line);margin-left:6px}
+  .job:last-child{padding-bottom:0}
+  .job::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--accent);border:2px solid #fff;box-shadow:0 0 0 2px var(--accent)}
+  .job h3{margin:0;font-size:1.08rem}
+  .job .org{color:var(--brand);font-weight:600}
+  .job .meta{color:var(--muted);font-size:.9rem;margin-bottom:6px}
+  .job ul{margin:6px 0 0;padding-left:18px}
+  .job li{margin-bottom:4px}
+  .job li b{color:var(--ink)}
+
+  .early{list-style:none;padding:0;margin:0}
+  .early li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px dashed var(--line);flex-wrap:wrap}
+  .early li:last-child{border-bottom:none}
+  .early .when{color:var(--muted);font-size:.9rem}
+
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .list{list-style:none;padding:0;margin:0}
+  .list li{padding:8px 0;border-bottom:1px solid var(--line)}
+  .list li:last-child{border-bottom:none}
+  .list small{display:block;color:var(--muted)}
+
+  footer{text-align:center;color:var(--muted);font-size:.88rem;padding:10px 0 36px}
+
+  @media (max-width:760px){
+    .hero{flex-direction:column;text-align:center}
+    .chips,.contact,.btns{justify-content:center}
+    .hero h1{font-size:2.1rem}
+    .stats{grid-template-columns:1fr 1fr}
+    .ach,.skills,.two{grid-template-columns:1fr}
+    section{padding:22px 20px}
+  }
+  @media print{
+    body{background:#fff}
+    header{background:none;color:var(--ink);padding:10px 0}
+    .contact a,.contact span{color:var(--ink)}
+    .chips span{border-color:var(--line)}
+    .btns{display:none}
+    section{box-shadow:none;padding:12px 0;margin-top:8px}
+  }
 </style>
 </head>
 <body>
 
-<h1>Idar Nouti</h1>
-<div class="title">YOUR JOB TITLE (e.g. Supply Chain Professional)</div>
-<div class="contact">
-  <a href="mailto:YOUR EMAIL">YOUR EMAIL</a>
-  <a href="https://www.linkedin.com/in/YOUR-LINKEDIN">LinkedIn</a>
-  <span>YOUR CITY, Canada</span>
-</div>
+<header>
+  <div class="wrap hero">
+    <img src="photo.jpg" alt="Idar Nouti">
+    <div>
+      <h1>Idar Nouti</h1>
+      <div class="tagline">Supply Chain &amp; Procurement Professional · 20+ Years</div>
+      <div class="chips">
+        <span>Procurement Strategy</span>
+        <span>Public Sector Procurement</span>
+        <span>Process Improvement</span>
+        <span>SCMP Candidate</span>
+      </div>
+      <div class="contact">
+        <span>📍 Calgary, AB</span>
+        <a href="mailto:idar.nouti@gmail.com">✉️ idar.nouti@gmail.com</a>
+        <a href="tel:+18254370491">📞 +1-825-437-0491</a>
+        <span>🇨🇦 Canadian Citizen · English &amp; Arabic</span>
+      </div>
+      <div class="btns">
+        <a class="btn btn-primary" href="mailto:idar.nouti@gmail.com">Get in touch</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/idarnouti" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</header>
 
-<h2>Summary</h2>
-<p>WRITE 2–3 SENTENCES ABOUT YOUR EXPERIENCE AND WHAT YOU'RE LOOKING FOR.</p>
+<main class="wrap">
 
-<h2>Experience</h2>
-<div class="job">
-  <h3>JOB TITLE – COMPANY</h3>
-  <div class="meta">START YEAR – END YEAR · CITY</div>
-  <ul>
-    <li>ACHIEVEMENT OR RESPONSIBILITY</li>
-    <li>ACHIEVEMENT OR RESPONSIBILITY</li>
-  </ul>
-</div>
-<div class="job">
-  <h3>JOB TITLE – COMPANY</h3>
-  <div class="meta">START YEAR – END YEAR · CITY</div>
-  <ul>
-    <li>ACHIEVEMENT OR RESPONSIBILITY</li>
-  </ul>
-</div>
+  <section>
+    <h2>Summary</h2>
+    <p>Supply chain and procurement professional with 20+ years leading procurement strategy, sourcing, contract management, and logistics for public sector, mining, petrochemical, and distribution organizations in Canada and the Middle East, including three years in-house in Calgary. Experienced across the full procurement cycle, from planning-phase support and RFP/RFQ tendering to contract award and supplier performance management. Advisory background with KPMG, PwC, Kearney, and Argon &amp; Co.</p>
+    <div class="stats">
+      <div class="stat"><b>20+</b><small>years experience</small></div>
+      <div class="stat"><b>95%+</b><small>regulatory compliance achieved</small></div>
+      <div class="stat"><b>30%</b><small>faster contract cycles</small></div>
+      <div class="stat"><b>1.5M+</b><small>#SupplyLinker views</small></div>
+    </div>
+  </section>
 
-<h2>Education</h2>
-<p><strong>DEGREE</strong> – SCHOOL, YEAR</p>
+  <section>
+    <h2>Key Achievements</h2>
+    <div class="ach">
+      <div class="card"><h3>Public Sector Transformation</h3><p>Led a government authority's procurement transformation (DASC, KPMG), reaching 95%+ regulatory compliance and a 25% efficiency gain.</p></div>
+      <div class="card"><h3>Data-Driven Executive Recommendations</h3><p>Turned a contract lifecycle gap analysis into an approved platform recommendation for Ma'aden; upskilled 100+ staff and cut contract cycle times by 30%.</p></div>
+      <div class="card"><h3>Fair, Defensible Procurement</h3><p>Designed PwC's ENSO framework for standard RFP evaluation and award, cutting selection and negotiation cycles by 25%.</p></div>
+      <div class="card"><h3>Inclusive Sourcing</h3><p>Onboarded 15+ small and minority-owned businesses through a Supplier Diversity Program while improving service delivery by 12%.</p></div>
+    </div>
+  </section>
 
-<h2>Skills</h2>
-<p>SKILL · SKILL · SKILL · SKILL</p>
+  <section>
+    <h2>Core Competencies</h2>
+    <div class="skills">
+      <div><h3>Procurement &amp; Sourcing</h3><div class="tags"><span>Strategic Sourcing</span><span>Purchasing</span><span>Direct &amp; Indirect Procurement</span><span>Procure-to-Pay (P2P)</span><span>Category Management</span><span>Spend Analysis</span><span>MRO Procurement</span><span>Materials Management</span></div></div>
+      <div><h3>Contracts &amp; Suppliers</h3><div class="tags"><span>Contract Lifecycle Management</span><span>RFP/RFQ &amp; Tenders</span><span>Contract Negotiation</span><span>EPC/EPCM Contracting</span><span>Public Sector Procurement</span><span>Total Cost of Ownership</span><span>Supplier Performance</span><span>Vendor Management</span><span>Supply Chain Risk</span></div></div>
+      <div><h3>Operations &amp; Logistics</h3><div class="tags"><span>Inventory Management</span><span>Warehousing</span><span>Logistics &amp; Transportation</span><span>Demand Planning &amp; S&amp;OP</span><span>Regulatory &amp; Trade Compliance</span><span>Lean / Continuous Improvement</span></div></div>
+      <div><h3>Systems &amp; Analytics</h3><div class="tags"><span>SAP Ariba</span><span>Coupa</span><span>Oracle</span><span>PeopleSoft</span><span>Vendor Management Systems</span><span>KPI Reporting</span><span>Power BI</span><span>Advanced Excel</span></div></div>
+      <div><h3>Leadership</h3><div class="tags"><span>Executive Stakeholder Engagement</span><span>Cross-Functional Team Leadership</span><span>Budget Management</span><span>Change Management</span></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Professional Experience</h2>
+
+    <div class="job">
+      <h3>Supply Chain &amp; Procurement Consultant (Independent)</h3>
+      <div class="meta"><span class="org">Elements Consulting</span> · Calgary, AB · 05/2025 – Present</div>
+      <ul>
+        <li><b>Supply Chain Thought Leadership:</b> Founded and lead #SupplyLinker, a LinkedIn content series making supply chain and procurement concepts accessible to professionals and career changers, generating 1.5M+ views.</li>
+        <li><b>Practice Development:</b> Building a consulting offering in procurement strategy, contract management, spend analysis, and supply chain resilience.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Director – Supply Chain &amp; Procurement (Contract)</h3>
+      <div class="meta"><span class="org">KPMG</span> · Saudi Arabia · 05/2024 – 05/2025</div>
+      <ul>
+        <li><b>Contract Lifecycle Management &amp; Governance:</b> Executed a CLM gap analysis and best practice redesign for Saudi Mining Company (Ma'aden), advising on enterprise CLM platform selection and leading change management programs that upskilled 100+ procurement personnel and reduced contract cycle times by 30%.</li>
+        <li><b>Procurement Transformation &amp; Compliance:</b> Directed a full-scale procurement transformation for the Development Authorities Support Centre (DASC), overhauling processes, technology, and governance frameworks to achieve a 25% gain in operational efficiency and 95%+ regulatory compliance.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Regional Supply Chain Manager</h3>
+      <div class="meta"><span class="org">Liquidation Warehouse Canada</span> · Calgary, AB · 04/2021 – 03/2024</div>
+      <ul>
+        <li><b>Procurement Operations:</b> Implemented an enterprise Vendor Management System (VMS) to align supplier relationships and streamline material delivery, driving a 20% reduction in lead times and improving end-to-end supply chain responsiveness.</li>
+        <li><b>Inventory Management &amp; Warehousing:</b> Optimized warehouse layout through continuous improvement, increasing storage capacity by 25% and improving inventory flow and picking accessibility.</li>
+        <li><b>Commercial Transformation:</b> Standardized contract templates and vendor governance frameworks, accelerating negotiation cycles and reducing commercial risk across active vendor accounts.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Senior Manager – Supply Chain &amp; Procurement (Contract)</h3>
+      <div class="meta"><span class="org">PricewaterhouseCoopers – PwC</span> · Saudi Arabia · 12/2020 – 03/2021</div>
+      <ul>
+        <li><b>Framework Design &amp; Governance:</b> Designed and deployed the Evaluation, Negotiation, and Selection Office (ENSO) framework to standardize RFP evaluation and tender award decisions, cutting supplier selection and negotiation cycle times by 25%.</li>
+        <li><b>Process Optimization:</b> Streamlined procurement and contract management procedures, driving a 15% efficiency gain and, through supplier performance management, an 18% improvement in on-time delivery.</li>
+        <li><b>Supplier Diversity:</b> Launched a Strategic Supplier Diversity Program, onboarding 15+ small and minority-owned enterprises and improving logistics service delivery performance by 12%.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Supply Chain Director</h3>
+      <div class="meta"><span class="org">Wide Systems for Technology</span> · Jordan · 06/2019 – 11/2020</div>
+      <ul>
+        <li><b>Process Optimization:</b> Standardized logistics procurement practices within the approved departmental budget, cutting procurement cycle times by 30%.</li>
+        <li><b>Contract Negotiation &amp; Indirect Procurement:</b> Ran competitive RFP and RFQ processes and led negotiation of key IT and logistics/freight contracts, driving a 10% reduction in procurement costs.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Senior Manager – Supply Chain &amp; Procurement (Contract)</h3>
+      <div class="meta"><span class="org">Kearney</span> · Saudi Arabia · 01/2019 – 06/2019</div>
+      <ul>
+        <li><b>Customs Modernization:</b> Led cross-functional teams to redesign customs processes and deploy a digital platform, accelerating clearance times and improving trade compliance and import/export accuracy.</li>
+        <li><b>Cross-Border Logistics:</b> Developed operational frameworks for the TIR transit system, driving a 72% reduction in land transit times between Saudi Arabia and neighbouring Gulf countries.</li>
+        <li><b>Regulatory Alignment &amp; Change Management:</b> Benchmarked customs regulations against international standards and led stakeholder readiness programs to accelerate platform adoption.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Senior Consultant – Supply Chain &amp; Procurement</h3>
+      <div class="meta"><span class="org">Devoteam</span> · Saudi Arabia · 01/2016 – 12/2018</div>
+      <ul>
+        <li><b>Corporatization &amp; Commercial Model:</b> Transformed the IT department of the General Authority of Civil Aviation (GACA) from a cost center into a revenue generating business unit, redesigning sourcing, contracting, and logistics for airport operations.</li>
+        <li><b>Supply Chain Governance:</b> Designed a unified supply chain process framework for the Saudi Ministry of Defence across all divisions, standardizing vendor governance and eliminating operational silos.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Senior Consultant – Supply Chain &amp; Procurement</h3>
+      <div class="meta"><span class="org">Argon &amp; Co</span> · Saudi Arabia · 01/2012 – 12/2015</div>
+      <ul>
+        <li><b>Supplier Diversification &amp; Market Intelligence:</b> Conducted spend analysis and market research to identify and onboard new suppliers, expanding regional logistics infrastructure and opening cost-effective sourcing channels.</li>
+        <li><b>Supplier Governance Frameworks:</b> Architected end-to-end supplier management frameworks, including prequalification criteria, contract protocols, and evaluation systems, to strengthen supply chain reliability and governance.</li>
+        <li><b>Commercial Negotiation &amp; Savings:</b> Partnered with cross-functional teams to manage tenders and negotiate strategic procurement contracts, driving a 10% cost reduction with full regulatory compliance.</li>
+        <li><b>Vendor Performance Optimization:</b> Designed and deployed a vendor scorecard system to benchmark supplier performance, driving a 20% improvement in vendor accountability and service delivery quality.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Early Career</h2>
+    <ul class="early">
+      <li><span><b>Supply Chain Manager</b> – Mimari Petrochemical Industries · Jordan</span><span class="when">07/2009 – 12/2011</span></li>
+      <li><span><b>Supply Chain Specialist</b> – United Nations · Jordan, Kuwait &amp; Iraq</span><span class="when">06/2007 – 06/2009</span></li>
+      <li><span><b>Senior Logistics Specialist</b> – Suez · Jordan</span><span class="when">01/2006 – 06/2007</span></li>
+      <li><span><b>Senior Logistics Coordinator</b> – Halliburton / KBR · Jordan &amp; Iraq</span><span class="when">01/2005 – 01/2006</span></li>
+      <li><span><b>Supply Chain Specialist</b> – Maersk · Jordan</span><span class="when">04/2003 – 12/2004</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="two">
+      <div>
+        <h2>Education</h2>
+        <ul class="list">
+          <li><b>Executive MBA, Supply Chain &amp; Logistics Management</b><small>Guglielmo Marconi University · 2023 (WES: Canadian Master's equivalent)</small></li>
+          <li><b>Postgraduate Diploma &amp; Advanced Diploma, Supply Chain &amp; Logistics</b><small>Cambridge International Qualification · 2021, 2023</small></li>
+          <li><b>Bachelor of Business Administration</b><small>University of Delhi · 2003</small></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Certifications</h2>
+        <ul class="list">
+          <li><b>Supply Chain Management Professional (SCMP)</b><small>Supply Chain Canada · In Progress</small></li>
+          <li><b>Intellectual Property Strategy, Management &amp; Commercialization</b><small>University of Alberta</small></li>
+          <li><b>Certified Lean Six Sigma Yellow Belt (CLSSYB)</b><small>Go Lean Six Sigma</small></li>
+          <li><b>CISCM, CICCM, CIPP</b><small>IPSCMI – Supply Chain Manager, Commercial Contracts Manager, Purchasing Professional</small></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>© 2026 Idar Nouti · Calgary, Alberta · <a href="mailto:idar.nouti@gmail.com">idar.nouti@gmail.com</a></footer>
 
 </body>
 </html>
